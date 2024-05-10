@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 240px;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.result {
+    outline: 1px solid #aaa;
+}
+
+#result {
+    width: calc(100% - 24px); /* Mengurangi 24px dari lebar total untuk memperhitungkan border */
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box; /* Menyesuaikan ukuran input dengan kotak termasuk border */
+    outline: none; /* Menghilangkan outline bawaan */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.number {
+    background-color: #fff;
+}
+
+.operator {
+    background-color: #aaa;
+    color: #fff;
+}
+
+.equals {
+    background-color: dodgerblue;
+    color: #fff;
+}
